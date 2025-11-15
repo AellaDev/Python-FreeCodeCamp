@@ -13,3 +13,13 @@ user_age = 22
 #DO NOT use single letter for naming unless it is for the loops
 # you see this?
 #this is a comment
+
+
+#
+print('Hellow')
+#You can also use the print function to show multiple values, or arguments, at once by separating them with commas. For example:
+print('my favorite colors are', 'blue', 'green', 'red')
+# this is print
+
+#
+#Data Types
