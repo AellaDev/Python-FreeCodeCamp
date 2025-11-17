@@ -1,6 +1,4 @@
-resume = {'name': 'Arabella Paite', 'age': 22}
-print('Name: ', resume['name'], '\nAge: ', resume['age'])
+name = 'Aella'
 
-resume['name'] = 'Arabella Pacite'
-
-print('Name: ', resume['name'], '\nAge: ', resume['age'])
+whatisname = isinstance(name, str)
+print(whatisname)
