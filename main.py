@@ -1,5 +1,6 @@
-nums = [1, 2, 3]
-print('Number 1: ', nums[0])
+resume = {'name': 'Arabella Paite', 'age': 22}
+print('Name: ', resume['name'], '\nAge: ', resume['age'])
 
-nums[0] = 4
-print('Number 1: ', nums[0])
+resume['name'] = 'Arabella Pacite'
+
+print('Name: ', resume['name'], '\nAge: ', resume['age'])
