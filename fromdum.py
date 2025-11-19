@@ -33,3 +33,33 @@ one of them is this!
 similarly [ :5] results to the whole list from the index0
 '''
 print(userAges4)
+
+userAges[0] = 5
+'''
+This changes the index[0] to 5
+you can change any index
+nameofList[index] = number to replace
+'''
+print(userAges)
+
+userAges.append(99)
+'''
+By the name itself, append
+It add items to to the last item
+so now it is:
+[5, 22, 23, 24, 25, 99]
+The reason it's 5 not 21 is because we changes index[0] earlier
+'''
+print(userAges)
+
+del userAges[2]
+'''
+If there is such thing as 'adding items'
+then there is 'removing items'
+this is 'del'
+unlike append it is not a fx
+(If it is a fx you are gonna need parenthesis reagrdless if it's empty or not)
+for this you on't need parentheses
+just type 'del' then the listname and then index
+'''
+print(userAges)
