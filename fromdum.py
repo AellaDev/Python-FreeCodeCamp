@@ -63,3 +63,49 @@ for this you on't need parentheses
 just type 'del' then the listname and then index
 '''
 print(userAges)
+
+########
+myList = [1, 2, 3, 4, 5, 'Hello']
+'''
+Yes, lists can have different types of items
+'''
+print(myList)
+'''
+If you noticed,
+even tho 'Hello' is a string
+the '' marks are included in print
+that is because you are printing the LIST
+not the INDEX
+'''
+print(myList[5])
+'''
+This one results to Hello with no marks
+because You are printing the item not the lists
+'''
+print(myList[-1])
+'''
+remember -1 means last on the list
+'''
+print(myList[1:5])
+'''
+This one means from index 1 to index5-1
+'''
+
+myList[1] = 20
+'''
+This is modification
+'''
+print(myList)
+
+myList.append('How are you')
+'''
+ADD! append means add item
+'''
+print(myList)
+
+del myList[6]
+'''
+del means delete or remove
+noticed we removed what we added?
+'''
+print(myList)
