@@ -1,13 +1,33 @@
-## Conditional Statements (if)
+## Calculator
 
-number = input('Enter 1 or 2: ')
-number = int(number)
+print('''
+Welcome to AellaDev's Calculator!
+            Menu
+1. Addition
+2. Subtraction
+3. Division
+4. Multiplication
+''')
 
-if number == 1:
-    print('Hello User 1')
+choiceofMethod = input('Choose a number from the menu: ')
 
-elif number == 2:
-    print('Hello User 2. You have limited access')
+x = input('Enter X: ')
+y = input('Enter Y: ')
 
+x = int(x)
+y = int(y)
+
+if choiceofMethod == '1':
+    ans = x + y
+    print('The {0:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ans)
+elif choiceofMethod == '2':
+    ans = x - y
+    print('The {1:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ans)
+elif choiceofMethod == '3':
+    ans = x/y
+    print('The {2:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ans)
+elif choiceofMethod == '4':
+    ans = x*y
+    print('The {3:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ans)
 else:
-    print('Please enter 1 or 2 only')
+    print('Please choose from the menu. Number only.')
