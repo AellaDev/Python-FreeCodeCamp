@@ -1,20 +1,51 @@
-#tuples
-#Tuples use () lists use []
-#Tuples CAN'T be changed, lists CAN be changed
-
-monthsYear = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+#Dictionary
+'''
+Pretty sure you already held a dictionary before
+Dictionary is like a list
+But with a PAIR
+'''
 
 '''
-Since you can't modify a tuple
-theres really nothing much you can do here
-It's very useful for when You are listing stuff that won't change
-for example the months
-or the birthdays of your family
-unless one of them get estranged or sumn
+There are 2 ways to declare a dict
 '''
-print(monthsYear)
-print(monthsYear[10])
 
-# monthsYear[0] = 'lalang'
-#this will cause an error
-print(monthsYear)
+# dictname = {Items} ['key':data]
+# emPloyees = {'Peter':38, 'Mitch':40, 'Law':20, 'Vince':'Not Available'}
+'''
+you can have different types of data in a dict
+'''
+
+# dictname = dict(items) [key = data]
+emPloyees = dict(Peter = 38, Mitch = 40, Law = 20, Vince = 'Not Available')
+
+print(emPloyees['Law'])
+'''
+In order to access an age which is a data
+just like list you declare the position
+but dict soesnt use index
+it uses key:pair
+which means you declare the key
+'''
+
+emPloyees['Law'] = 50
+print(emPloyees)
+'''
+to MODIFY
+just like lists
+Law is now 50
+'''
+
+newDict = {}
+'''
+this is an empty dictionary
+you can add items to this by doing below
+'''
+newDict['Ruru'] = 18
+newDict['Wei'] = 20
+print(newDict)
+
+del newDict['Ruru']
+'''
+Just like lists this is how you delete
+'''
+print(newDict)
