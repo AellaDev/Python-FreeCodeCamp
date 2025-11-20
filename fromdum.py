@@ -28,11 +28,8 @@ ansPro = x * y
 if choiceofMethod == '1':
     print('The {0:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ansSum)
 elif choiceofMethod == '2':
-    ansDif = operations(x, y)
     print('The {1:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ansDif)
 elif choiceofMethod == '3':
-    ansQuo = operations(x, y)
     print('The {2:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ansQuo)
 elif choiceofMethod == '4':
-    ansPro = operations(x, y)
     print('The {3:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ansPro)
