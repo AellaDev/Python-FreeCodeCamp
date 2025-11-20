@@ -1,19 +1,13 @@
-## Escape Characters
-# \character
+## Conditional Statements (if)
 
-'''
-\t = tab
-\\ = \
-\n = new line
-\" = double quote
-\' = single quote
+number = input('Enter 1 or 2: ')
+number = int(number)
 
-If you are trying to print \character as is
-you need to use raw input which is r'stringexample'
-'''
-print('Hello\tWorld')
-print('Hello\\World')
-print('Hello\nWorld')
-print('Hello\"World')
-print('Hello\'World')
-print(r'Hello\tWorld')
+if number == 1:
+    print('Hello User 1')
+
+elif number == 2:
+    print('Hello User 2. You have limited access')
+
+else:
+    print('Please enter 1 or 2 only')
