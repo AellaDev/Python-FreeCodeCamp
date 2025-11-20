@@ -1,16 +1,13 @@
-## INPUT
+## Triple Quotes
 
-fir = input('Enter first number: ')
-sec = input('Enter Second number: ')
-
-print('First Number: {0:s} + Second Number: {1:s}'.format(fir, sec))
 '''
-input() will always store your input as STRING
-so if you want it to be math based
-then you have to type cast
+This is a multi line comment
+you can have long messages here that the computer ignores
+but your devs can read
 '''
 
-fir = int(fir)
-sec = int(sec)
-
-print(fir + sec)
+print('''
+you can have long messages on print
+but it will show as such as you see in code
+so it looks like a poem when you print lol
+''')
