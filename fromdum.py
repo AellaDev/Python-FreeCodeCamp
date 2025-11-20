@@ -1,13 +1,19 @@
-## Triple Quotes
+## Escape Characters
+# \character
 
 '''
-This is a multi line comment
-you can have long messages here that the computer ignores
-but your devs can read
-'''
+\t = tab
+\\ = \
+\n = new line
+\" = double quote
+\' = single quote
 
-print('''
-you can have long messages on print
-but it will show as such as you see in code
-so it looks like a poem when you print lol
-''')
+If you are trying to print \character as is
+you need to use raw input which is r'stringexample'
+'''
+print('Hello\tWorld')
+print('Hello\\World')
+print('Hello\nWorld')
+print('Hello\"World')
+print('Hello\'World')
+print(r'Hello\tWorld')
