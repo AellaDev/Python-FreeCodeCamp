@@ -1,36 +1,36 @@
-## For Loop
+## Calculator
+while True:
+    print('''
+    Welcome to AellaDev's Calculator!
+                Menu
+    1. Addition
+    2. Subtraction
+    3. Division
+    4. Multiplication
+    ''')
 
-'''
-for a in iterable:
-    print(a)
-'''
+    choiceofMethod = input('Choose a number from the menu: ')
+    if choiceofMethod not in ['1', '2', '3', '4']:
+        print('Please choose from the menu. Number only.')
+        exit()
+    else:
+        x = input('Enter X: ')
+        y = input('Enter Y: ')
 
-# example with list
+    x = int(x)
+    y = int(y)
 
-pets = ['cats', 'dogs', 'rabbits', 'hamsters']
-'''
-If you want to show the index
-you can just add enumerate on the pets
-but it will show the () and the  comma
-(0, 'cats')
-but if there is an index then the index will show as 
-0 cats
-'''
-for index, myPets in enumerate(pets):
-    print(index, myPets)
+    ansSum = x + y
+    ansDif = x - y
+    ansQuo = x / y
+    ansPro = x * y
 
-# loop with string
-message = 'Hello World'
-'''
-Yes you can loop within a string too
-'''
-for b in message:
-    print(b)
+    if choiceofMethod == '1':
+        print('The {0:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ansSum)
+    elif choiceofMethod == '2':
+        print('The {1:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ansDif)
+    elif choiceofMethod == '3':
+        print('The {2:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ansQuo)
+    elif choiceofMethod == '4':
+        print('The {3:s} is: '.format('SUM', 'DIFFERENCE', 'QUOTIENT', 'PRODUCT'), ansPro)
 
-# loop with sequence of numbers
-
-for c in range(0, 100, 4):
-    print(c)
-
-for i in range(1, 21):
-    print('I have repeated', i, 'time/s')
